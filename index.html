@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shalini- Developer portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- Main Style Sheet -->
+    <link rel="stylesheet" href="css/compile.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">
+          <a class="navbar-brand" href="#"
+            ><i class="fa fa-user" aria-hidden="true"></i>
+            <span class="ms-2">Shalini</span></a
+          >
+        </div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Resume</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact</a></li>
+          </ul>
+        </div>
+        <div class="end">
+          <div
+            onclick="myfunction()"
+            class="color-mode d-flex justify-content-center align-items-center"
+          >
+            <i
+              id="icon"
+              class="color-mode-icon fa fa-moon-o"
+              aria-hidden="true"
+            ></i>
+            <span class="ms-2">Color mode</span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          <h1>
+            Hey Folks, I'm <span class="purple">Shalini Sharma</span>
+            <span id="element"></span>
+            <div class="button-group">
+              <button class="btn">Download Resume</button>
+              <button class="btn">Github</button>
+            </div>
+          </h1>
+        </div>
+
+        <div class="rightSection">
+          <img src="./images/webDevelopment.svg" />
+        </div>
+      </section>
+      <section class="secondSection container">
+        <div class="row">
+          <div class="col-md-6">
+            <span class="text-grey">What I have done so far</span>
+            <h3>Work Experience</h3>
+            <div class="box">
+              <div class="vertical">
+                <img class="image-top" src="/images/developer.png" alt="" />
+                <div class="vertical-title">
+                  HTML Developer Intern(aug 2022- dec 2022)
+                </div>
+                <div class="vertical-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+                  porro nesciunt nam, esse repellendus autem, nisi magni omnis
+                  hic libero adipisci provident expedita cumque sunt,
+                  consequatur ab enim harum ipsa?
+                </div>
+              </div>
+              <div class="vertical">
+                <img class="image-top" src="/images/developer.png" alt="" />
+                <div class="vertical-title">
+                  HTML Developer(Aug 2022- july 2023)
+                </div>
+                <div class="vertical-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+                  porro nesciunt nam, esse repellendus autem, nisi magni omnis
+                  hic libero adipisci provident expedita cumque sunt,
+                  consequatur ab enim harum ipsa?
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <span class="text-grey">Achievements done so far</span>
+            <h3>Achievements</h3>
+            <div class="box">
+              <div class="vertical">
+                <img class="image-top" src="/images/developer.png" alt="" />
+                <div class="vertical-title">
+                  HTML Developer Intern(aug 2022- dec 2022)
+                </div>
+                <div class="vertical-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+                  porro nesciunt nam, esse repellendus autem, nisi magni omnis
+                  hic libero adipisci provident expedita cumque sunt,
+                  consequatur ab enim harum ipsa?
+                </div>
+              </div>
+              <div class="vertical">
+                <img class="image-top" src="/images/developer.png" alt="" />
+                <div class="vertical-title">
+                  HTML Developer(Aug 2022- july 2023)
+                </div>
+                <div class="vertical-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+                  porro nesciunt nam, esse repellendus autem, nisi magni omnis
+                  hic libero adipisci provident expedita cumque sunt,
+                  consequatur ab enim harum ipsa?
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer container mt-5">
+        <h1 class="text-center">Get In Touch</h1>
+        <h3>Let's Connect</h3>
+
+        <div class="footer-social mt-5">
+          <ul>
+            <li><a target="_blank" href="mailto:shalinisharmar60@gmail.com"><i class="fa fa-envelope me-2" aria-hidden="true"></i>shalinisharmar60@gmail.com</a></li>
+            <li><a href="/"><i class="fa fa-phone me-2" aria-hidden="true"></i>+91 8777262781</a></li>
+            <li><a target="_blank" href="https://www.linkedin.com/in/shalini-sharma-008492196/"><i class="fa fa-linkedin me-2" aria-hidden="true"></i>
+              LinkedIn</a></li>
+            <li><a href="/"><i class="fa fa-github me-2" aria-hidden="true"></i>
+              Github</a></li>
+            <li><a href="/"><i class="fa fa-twitter me-2" aria-hidden="true"></i>Twitter</a></li>
+          </ul>
+        </div>
+        <div class="footer-rights mt-5 text-center">
+          <p>Copyright &#169; 2022 Designed and Built by Shalini Sharma</p>
+        </div>
+        
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer", "Frontend Developer"],
+        typeSpeed: 70,
+      });
+    </script>
+
+    <script>
+      function myfunction() {
+        let element = document.body;
+        element.classList.toggle("dark-theme");
+      }
+    </script>
+  </body>
+</html>

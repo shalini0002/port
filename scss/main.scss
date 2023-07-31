@@ -1,0 +1,230 @@
+// variables
+
+$primary-theme: #610656;
+$secondary-theme: #e1a8e0;
+
+$primary-dark-theme: #000000;
+$secondary-dark-theme: #ffffff;
+
+$color-white: #ffffff;
+$color-grey: #cbcbcb;
+$color-black: #000000;
+
+$text-white: #ffffff;
+$dark-mode-color: #0c0c0d;
+
+$font-weight-bold: bold;
+$font-weight-normal: normal;
+$font-weight-light: 300;
+
+$font-base: "Maven Pro", sans-serif;
+$body-font-size: 12px;
+$body-line-height: 18px;
+$h1-font-size: 60px;
+$h1-line-height: 66px;
+$h2-font-size: 50px;
+$h2-line-height: 56px;
+
+$small-font-size: 14px;
+$small-line-height: 20px;
+$link-font-size: 16px;
+
+@mixin transition-effect {
+  transition: all 0.4s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $primary-theme;
+  color: $secondary-theme;
+  &.dark-theme {
+    background-color: $primary-dark-theme;
+    color: $secondary-dark-theme;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style: none;
+  }
+}
+
+a {
+  font-size: $link-font-size;
+  font-weight: $font-weight-normal;
+  text-decoration: none !important;
+  color: $secondary-theme;
+  @include transition-effect;
+  &:hover {
+    color: $color-white !important;
+  }
+}
+
+// // TYPOGRAPHY
+p {
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+  font-weight: $font-weight-light;
+  line-height: 1.5;
+  color: $color-white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: $font-weight-bold;
+  letter-spacing: -1px;
+}
+
+h1 {
+  color: $color-white;
+  font-size: $h1-font-size;
+  line-height: $h1-line-height;
+  margin: 24px 0;
+}
+
+h2 {
+  color: $color-white;
+  font-size: $h2-font-size;
+  line-height: $h2-line-height;
+  font-weight: $font-weight-bold;
+}
+
+h3 {
+  color: $color-white;
+}
+
+h3,
+b, strong {
+	font-weight: $font-weight-bold;
+}
+
+// Header
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 70px;
+  background-color: $primary-dark-theme;
+
+  ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  ul li {
+    list-style: none;
+    margin: 0 23px;
+    color: $primary-theme;
+  }
+
+  .navbar-brand {
+    .fa-user {
+      font-size: 26px;
+    }
+  }
+}
+
+//BANNER SECTION
+.firstSection {
+  display: flex;
+  justify-content: space-around;
+  padding: 80px 0 80px 0;
+  > div {
+    width: 30%;
+  }
+}
+.leftSection {
+  .purple {
+    color: blueviolet;
+  }
+  #element {
+    color: $color-white;
+  }
+  .button-group{
+    padding: 40px 0;
+  }
+ .btn{
+  padding: 12px;
+  background: $color-white;
+  color: black;
+  border-radius: 6px;
+  border: 2px solid $color-white;
+  font-size: $body-font-size;
+  &:hover{
+    background-color: $primary-theme;
+    color: $color-white;
+  }
+ }
+}
+ 
+//button 
+
+.rightSection {
+  img {
+    width: 80%;
+    margin: 50px;
+  }
+}
+//EXPERIENCE
+.secondSection {
+  height: 400px;
+  .text-grey {
+    color: $color-grey;
+  }
+  .box {
+    background-color: $color-white;
+    height: 1px;
+    width: 30vw;
+    margin: 50px 0;
+    display: flex;
+
+    .vertical {
+      height: 90px;
+      background-color: $color-white;
+      width: 1px;
+      margin: 0 120px;
+      .image-top {
+        width: 53px;
+        position: relative;
+        top: -51px;
+        left: -26px;
+      }
+      .vertical-title {
+        position: relative;
+        top: 44px;
+        width: 200px;
+      }
+      .vertical-desc {
+        position: relative;
+        top: 60px;
+        color: $color-grey;
+        font-size: $small-font-size;
+        line-height: $small-line-height;
+        width: 200px;
+      }
+    }
+  }
+}
+
+//footer
+footer {
+  height: 200px;
+}
+.footer {
+  padding: 23px 122px;
+  .footer-social ul{
+    justify-content: center;
+    display: flex;
+    gap: 6rem;
+  }
+}

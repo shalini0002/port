@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #610656;
+  color: #e1a8e0;
+}
+body.dark-theme {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
+a {
+  font-size: 16px;
+  font-weight: normal;
+  text-decoration: none !important;
+  color: #e1a8e0;
+  transition: all 0.4s ease;
+}
+a:hover {
+  color: #ffffff !important;
+}
+
+p {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 60px;
+  line-height: 66px;
+  margin: 24px 0;
+}
+
+h2 {
+  color: #ffffff;
+  font-size: 50px;
+  line-height: 56px;
+  font-weight: bold;
+}
+
+h3 {
+  color: #ffffff;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 70px;
+  background-color: #000000;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  list-style: none;
+  margin: 0 23px;
+  color: #610656;
+}
+nav .navbar-brand .fa-user {
+  font-size: 26px;
+}
+
+.firstSection {
+  display: flex;
+  justify-content: space-around;
+  margin: 23px 0;
+}
+
+.firstSection div {
+  width: 30%;
+}
+
+.leftSection .purple {
+  color: blueviolet;
+}
+
+.rightSection img {
+  width: 80%;
+  margin: 50px;
+}
+
+/*# sourceMappingURL=compile.css.map */

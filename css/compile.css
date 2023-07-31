@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #610656;
+  color: #e1a8e0;
+}
+body.dark-theme {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
+a {
+  font-size: 16px;
+  font-weight: normal;
+  text-decoration: none !important;
+  color: #e1a8e0;
+  transition: all 0.4s ease;
+}
+a:hover {
+  color: #ffffff !important;
+}
+
+p {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 60px;
+  line-height: 66px;
+  margin: 24px 0;
+}
+
+h2 {
+  color: #ffffff;
+  font-size: 50px;
+  line-height: 56px;
+  font-weight: bold;
+}
+
+h3 {
+  color: #ffffff;
+}
+
+h3,
+b, strong {
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 70px;
+  background-color: #000000;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  list-style: none;
+  margin: 0 23px;
+  color: #610656;
+}
+nav .navbar-brand .fa-user {
+  font-size: 26px;
+}
+
+.firstSection {
+  display: flex;
+  justify-content: space-around;
+  padding: 80px 0 80px 0;
+}
+.firstSection > div {
+  width: 30%;
+}
+
+.leftSection .purple {
+  color: blueviolet;
+}
+.leftSection #element {
+  color: #ffffff;
+}
+.leftSection .button-group {
+  padding: 40px 0;
+}
+.leftSection .btn {
+  padding: 12px;
+  background: #ffffff;
+  color: black;
+  border-radius: 6px;
+  border: 2px solid #ffffff;
+  font-size: 12px;
+}
+.leftSection .btn:hover {
+  background-color: #610656;
+  color: #ffffff;
+}
+
+.rightSection img {
+  width: 80%;
+  margin: 50px;
+}
+
+.secondSection {
+  height: 400px;
+}
+.secondSection .text-grey {
+  color: #cbcbcb;
+}
+.secondSection .box {
+  background-color: #ffffff;
+  height: 1px;
+  width: 30vw;
+  margin: 50px 0;
+  display: flex;
+}
+.secondSection .box .vertical {
+  height: 90px;
+  background-color: #ffffff;
+  width: 1px;
+  margin: 0 120px;
+}
+.secondSection .box .vertical .image-top {
+  width: 53px;
+  position: relative;
+  top: -51px;
+  left: -26px;
+}
+.secondSection .box .vertical .vertical-title {
+  position: relative;
+  top: 44px;
+  width: 200px;
+}
+.secondSection .box .vertical .vertical-desc {
+  position: relative;
+  top: 60px;
+  color: #cbcbcb;
+  font-size: 14px;
+  line-height: 20px;
+  width: 200px;
+}
+
+footer {
+  height: 200px;
+}
+
+.footer {
+  padding: 23px 122px;
+}
+.footer .footer-social ul {
+  justify-content: center;
+  display: flex;
+  gap: 6rem;
+}
+
+/*# sourceMappingURL=compile.css.map */

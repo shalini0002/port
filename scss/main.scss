@@ -119,20 +119,38 @@ nav {
   background-color: $primary-dark-theme;
 
   ul {
+    gap:1rem;
     display: flex;
     justify-content: center;
   }
 
   ul li {
     list-style: none;
-    margin: 0 23px;
+   
     color: $primary-theme;
   }
-
+.right{
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
   .navbar-brand {
     .fa-user {
       font-size: 26px;
     }
+  }
+  .hamburger{
+    display: none;
+    cursor: pointer;
+  }
+  .bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 }
 
@@ -141,9 +159,9 @@ nav {
   display: flex;
   justify-content: space-around;
   padding: 80px 0 80px 0;
-  > div {
-    width: 30%;
-  }
+  // > div {
+  //   width: 30%;
+  // }
 }
 .leftSection {
   .purple {
@@ -177,6 +195,9 @@ nav {
   }
 }
 //EDUCATION
+.education{
+  padding: 30px;
+}
 
 .timeline-wrapper {
   position: relative;
@@ -302,6 +323,18 @@ footer {
 //medium responsive
 
 @media screen and (max-width: 768px) {
+ nav{
+  .hamburger{
+    display: block;
+  }
+  ul{
+    display: none;
+  }
+ .right {
+    
+    gap: 1rem;
+}
+ } 
   .firstSection {
     flex-direction: column-reverse;
     padding: 0;
@@ -312,6 +345,9 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+   .button-group {
+      padding: 20px 0;
+  }
   }
   .rightSection img {
     width: 200px;
@@ -320,22 +356,29 @@ footer {
   }
   .rightSection {
     width: auto !important;
+    
   }
   .firstSection > div {
-    width: 100%;
-    padding: 50px;
+   
+    padding: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
+    h1{
+      font-size: 30px;
+    line-height: 36px;
+    }
   }
 
   .secondSection {
-    margin: auto;
-    height: 80vh;
-    max-width: 80vw;
+    padding: 30px;
+    /* margin: auto; */
+    // height: 80vh;
+    /* max-width: 80vw; */
     display: flex;
     align-items: center;
     justify-content: center;
+
     .box {
       flex-direction: column;
       width: 50vw;
@@ -356,8 +399,10 @@ footer {
       }
     }
   }
-  nav {
-    flex-direction: column;
+  .firstSection{
+    .education{
+      padding: 30px;
+    }
   }
   .timeline-yr {
     justify-content: center;
@@ -374,7 +419,7 @@ footer {
     top: 1px;
 }
   .footer{
-    padding: 70px 22px;
+    padding: 30px;
     .footer-social ul {
       justify-content: center;
       display: flex;
@@ -390,7 +435,7 @@ footer {
   .rightSection {
     img {
       margin: 0;
-      width: 300px;
+      
     }
   }
   .secondSection {

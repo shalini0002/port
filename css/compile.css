@@ -82,25 +82,40 @@ nav {
   background-color: #000000;
 }
 nav ul {
+  gap: 1rem;
   display: flex;
   justify-content: center;
 }
 nav ul li {
   list-style: none;
-  margin: 0 23px;
   color: #610656;
+}
+nav .right {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
 }
 nav .navbar-brand .fa-user {
   font-size: 26px;
+}
+nav .hamburger {
+  display: none;
+  cursor: pointer;
+}
+nav .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .firstSection {
   display: flex;
   justify-content: space-around;
   padding: 80px 0 80px 0;
-}
-.firstSection > div {
-  width: 30%;
 }
 
 .leftSection .purple {
@@ -127,6 +142,10 @@ nav .navbar-brand .fa-user {
 
 .rightSection img {
   width: 400px;
+}
+
+.education {
+  padding: 30px;
 }
 
 .timeline-wrapper {
@@ -246,6 +265,15 @@ footer {
   }
 }
 @media screen and (max-width: 768px) {
+  nav .hamburger {
+    display: block;
+  }
+  nav ul {
+    display: none;
+  }
+  nav .right {
+    gap: 1rem;
+  }
   .firstSection {
     flex-direction: column-reverse;
     padding: 0;
@@ -257,6 +285,9 @@ footer {
     justify-content: center;
     align-items: center;
   }
+  .leftSection .button-group {
+    padding: 20px 0;
+  }
   .rightSection img {
     width: 200px;
     padding: 0;
@@ -266,16 +297,19 @@ footer {
     width: auto !important;
   }
   .firstSection > div {
-    width: 100%;
-    padding: 50px;
+    padding: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
+  .firstSection > div h1 {
+    font-size: 30px;
+    line-height: 36px;
+  }
   .secondSection {
-    margin: auto;
-    height: 80vh;
-    max-width: 80vw;
+    padding: 30px;
+    /* margin: auto; */
+    /* max-width: 80vw; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -299,8 +333,8 @@ footer {
     left: 10px;
     top: -30px;
   }
-  nav {
-    flex-direction: column;
+  .firstSection .education {
+    padding: 30px;
   }
   .timeline-yr {
     justify-content: center;
@@ -317,7 +351,7 @@ footer {
     top: 1px;
   }
   .footer {
-    padding: 70px 22px;
+    padding: 30px;
   }
   .footer .footer-social ul {
     justify-content: center;
@@ -329,7 +363,6 @@ footer {
 @media screen and (max-width: 992px) {
   .rightSection img {
     margin: 0;
-    width: 300px;
   }
   .secondSection .box {
     width: 72vw;

@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -68,7 +69,8 @@ h3 {
 }
 
 h3,
-b, strong {
+b,
+strong {
   font-weight: bold;
 }
 
@@ -125,7 +127,6 @@ nav .navbar-brand .fa-user {
 
 .rightSection img {
   width: 400px;
-  margin: 50px;
 }
 
 .timeline-wrapper {
@@ -173,7 +174,6 @@ nav .navbar-brand .fa-user {
   font-weight: bold;
   display: inline-block;
   vertical-align: middle;
-  margin-left: 15px;
 }
 
 .secondSection {
@@ -193,7 +193,7 @@ nav .navbar-brand .fa-user {
   height: 90px;
   background-color: #ffffff;
   width: 1px;
-  margin: 0 120px;
+  margin: 0 6vw;
 }
 .secondSection .box .vertical .image-top {
   width: 53px;
@@ -228,22 +228,114 @@ footer {
   gap: 6rem;
 }
 
-@media screen and (max-width: 768px) {
-  body {
-    background-color: red;
+@media screen and (max-width: 576px) {
+  .rightSection img {
+    width: 200px;
   }
+  .timeline-info {
+    margin-left: 4rem;
+  }
+  .footer {
+    padding: 70px 22px;
+  }
+  .footer .footer-social ul {
+    justify-content: center;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
   .firstSection {
     flex-direction: column-reverse;
+    padding: 0;
+  }
+  .leftSection {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .rightSection img {
-    width: 400px;
-    margin: 100px;
+    width: 200px;
+    padding: 0;
+    margin: 0;
+  }
+  .rightSection {
+    width: auto !important;
   }
   .firstSection > div {
     width: 100%;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .secondSection {
+    margin: auto;
+    height: 80vh;
+    max-width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .secondSection .box {
     flex-direction: column;
+    width: 50vw;
+  }
+  .secondSection .box .vertical {
+    height: unset;
+  }
+  .secondSection .box .vertical .image-top {
+    top: 5px;
+    left: -49px;
+  }
+  .secondSection .box .vertical .vertical-title {
+    top: -44px;
+    left: 10px;
+  }
+  .secondSection .box .vertical .vertical-desc {
+    left: 10px;
+    top: -30px;
+  }
+  nav {
+    flex-direction: column;
+  }
+  .timeline-yr {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+  }
+  .timeline-info {
+    margin-left: 4rem;
+  }
+  .timeline-wrapper:before {
+    left: 22px;
+    top: 1px;
+  }
+  .footer {
+    padding: 70px 22px;
+  }
+  .footer .footer-social ul {
+    justify-content: center;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 992px) {
+  .rightSection img {
+    margin: 0;
+    width: 300px;
+  }
+  .secondSection .box {
+    width: 72vw;
+  }
+  .secondSection .box .vertical {
+    margin: 0 16vw;
   }
 }
 

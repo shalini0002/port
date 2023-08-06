@@ -36,6 +36,7 @@ $link-font-size: 16px;
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -104,8 +105,9 @@ h3 {
 }
 
 h3,
-b, strong {
-	font-weight: $font-weight-bold;
+b,
+strong {
+  font-weight: $font-weight-bold;
 }
 
 // Header
@@ -150,81 +152,79 @@ nav {
   #element {
     color: $color-white;
   }
-  .button-group{
+  .button-group {
     padding: 40px 0;
   }
- .btn{
-  padding: 12px;
-  background: $color-white;
-  color: black;
-  border-radius: 6px;
-  border: 2px solid $color-white;
-  font-size: $body-font-size;
-  &:hover{
-    background-color: $primary-theme;
-    color: $color-white;
+  .btn {
+    padding: 12px;
+    background: $color-white;
+    color: black;
+    border-radius: 6px;
+    border: 2px solid $color-white;
+    font-size: $body-font-size;
+    &:hover {
+      background-color: $primary-theme;
+      color: $color-white;
+    }
   }
- }
 }
- 
-//button 
+
+//button
 
 .rightSection {
   img {
     width: 400px;
-    margin: 50px;
   }
 }
 //EDUCATION
 
 .timeline-wrapper {
-	position: relative;
-	padding-bottom: 10px;
-	&:last-child {
-		&:before {
-			height: 0;
-		}
-	}
-	&:before {
-		content: "";
-    	background: $color-grey;
-    	width: 3px;
-    	height: 100%;
-    	position: absolute;
-    	left: 38px; 
-	}
+  position: relative;
+  padding-bottom: 10px;
+  &:last-child {
+    &:before {
+      height: 0;
+    }
+  }
+  &:before {
+    content: "";
+    background: $color-grey;
+    width: 3px;
+    height: 100%;
+    position: absolute;
+    left: 38px;
+  }
 }
 
 .timeline-yr {
-	background: $color-grey;
-	border-radius: 100%;
-	position: absolute;
-	width: 75px;
-	height: 75px;
-	line-height: 75px;
-	text-align: center;
-	span {
-		color: $text-white;
-    	font-size: $link-font-size;
-    	font-weight: $font-weight-bold;
-    	display: block;
-    	line-height: 75px;
-	}
+  background: $color-grey;
+  border-radius: 100%;
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  text-align: center;
+  span {
+    color: $text-white;
+    font-size: $link-font-size;
+    font-weight: $font-weight-bold;
+    display: block;
+    line-height: 75px;
+  }
 }
 
 .timeline-info {
-	display: inline-block;
-	vertical-align: top;
-	max-width: 432px;
-	margin-left: 6em;
-	small {
-		color: $color-grey;
-    	font-size: $link-font-size;
-    	font-weight: $font-weight-bold;
-    	display: inline-block;
-    	vertical-align: middle;
-    	margin-left: 15px;
-	}
+  display: inline-block;
+  vertical-align: top;
+  max-width: 432px;
+  margin-left: 6em;
+  small {
+    color: $color-grey;
+    font-size: $link-font-size;
+    font-weight: $font-weight-bold;
+    display: inline-block;
+    vertical-align: middle;
+  }
 }
 
 //EXPERIENCE
@@ -244,7 +244,7 @@ nav {
       height: 90px;
       background-color: $color-white;
       width: 1px;
-      margin: 0 120px;
+      margin: 0 6vw;
       .image-top {
         width: 53px;
         position: relative;
@@ -274,36 +274,131 @@ footer {
 }
 .footer {
   padding: 23px 122px;
-  .footer-social ul{
+  .footer-social ul {
     justify-content: center;
     display: flex;
     gap: 6rem;
   }
+}
+//small responsive
+@media screen and (max-width: 576px){
+  .rightSection img{
+   width: 200px;
+  }
+  .timeline-info {
+    margin-left: 4rem;
+}
+  .footer{
+    padding: 70px 22px;
+    .footer-social ul {
+      justify-content: center;
+      display: flex;
+      gap: 1rem;
+      flex-direction: column;
+  }
+  }
   
 }
-//tab responsive
- 
+//medium responsive
+
 @media screen and (max-width: 768px) {
-  body{
-  background-color: red;
-  }
-  .firstSection{
+  .firstSection {
     flex-direction: column-reverse;
+    padding: 0;
+  }
+  .leftSection {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .rightSection img {
-    width: 400px;
-    margin: 100px;
-}
-.firstSection > div {
-  width: 100%;
-}
-.secondSection{
-  .box{
+    width: 200px;
+    padding: 0;
+    margin: 0;
+  }
+  .rightSection {
+    width: auto !important;
+  }
+  .firstSection > div {
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .secondSection {
+    margin: auto;
+    height: 80vh;
+    max-width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .box {
+      flex-direction: column;
+      width: 50vw;
+      .vertical {
+        height: unset;
+        .image-top {
+          top: 5px;
+          left: -49px;
+        }
+        .vertical-title {
+          top: -44px;
+          left: 10px;
+        }
+        .vertical-desc {
+          left: 10px;
+          top: -30px;
+        }
+      }
+    }
+  }
+  nav {
     flex-direction: column;
   }
+  .timeline-yr {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+  }
+  .timeline-info {
+    margin-left: 4rem;
 }
-
-
+  .timeline-wrapper:before {
+    left: 22px;
+    top: 1px;
+}
+  .footer{
+    padding: 70px 22px;
+    .footer-social ul {
+      justify-content: center;
+      display: flex;
+      gap: 1rem;
+      flex-direction: column;
+  }
+  }
  
-  
+}
+//large responsive
+
+@media screen and (max-width: 992px) {
+  .rightSection {
+    img {
+      margin: 0;
+      width: 300px;
+    }
+  }
+  .secondSection {
+    .box {
+      width: 72vw;
+      .vertical {
+        margin: 0 16vw;
+      }
+    }
+  }
 }

@@ -112,9 +112,10 @@ strong {
 
 // Header
 nav {
+  padding: 20px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 70px;
   background-color: $primary-dark-theme;
 
@@ -145,8 +146,8 @@ nav {
   }
   .bar{
     display: block;
-    width: 25px;
-    height: 3px;
+    width: 20px;
+    height: 1px;
     background-color: white;
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
@@ -193,6 +194,10 @@ nav {
   img {
     width: 400px;
   }
+}
+//PROJECTS
+.projects{
+
 }
 //EDUCATION
 .education{
@@ -257,15 +262,15 @@ nav {
   .box {
     background-color: $color-white;
     height: 1px;
-    width: 30vw;
+    width: 45vw;
     margin: 50px 0;
     display: flex;
 
     .vertical {
-      height: 90px;
+      height: 60px;
       background-color: $color-white;
       width: 1px;
-      margin: 0 6vw;
+      margin: 0 10vw;
       .image-top {
         width: 53px;
         position: relative;
@@ -274,7 +279,8 @@ nav {
       }
       .vertical-title {
         position: relative;
-        top: 44px;
+        top: 9px;
+        left: -2px;
         width: 200px;
       }
       .vertical-desc {
@@ -327,9 +333,36 @@ footer {
   .hamburger{
     display: block;
   }
-  ul{
-    display: none;
+  .hamburger.active .bar:nth-child(2){
+opacity:0;
   }
+  .hamburger.active .bar:nth-child(1){
+    transform:translateY(5px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3){
+    transform:translateY(-7px) rotate(-49deg);
+  }
+  .nav-menu{
+    position: fixed;
+    left:-100%;
+    top:70px;
+    gap:0;
+    flex-direction: column;
+    background-color: $color-black;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s ease-in;
+
+  }
+  .nav-item{
+    margin: 16px 0;
+  }
+
+  .nav-menu.active{
+    left: 0;
+    
+  }
+  
  .right {
     
     gap: 1rem;
@@ -372,9 +405,7 @@ footer {
 
   .secondSection {
     padding: 30px;
-    /* margin: auto; */
-    // height: 80vh;
-    /* max-width: 80vw; */
+   
     display: flex;
     align-items: center;
     justify-content: center;

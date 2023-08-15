@@ -5,11 +5,22 @@
 }
 
 body {
-  background-color: #610656;
-  color: #e1a8e0;
+  background-color: #ffc5f8;
+  color: #8a2be2;
 }
 body.dark-theme {
   background-color: #000000;
+}
+body.dark-theme h1, body.dark-theme h2, body.dark-theme h3, body.dark-theme h4, body.dark-theme h5, body.dark-theme h6 {
+  color: #ffffff !important;
+}
+body.dark-theme #element {
+  color: #ffffff;
+}
+body.dark-theme p {
+  color: #ffffff;
+}
+body.dark-theme a:hover {
   color: #ffffff;
 }
 
@@ -25,19 +36,18 @@ a {
   font-size: 16px;
   font-weight: normal;
   text-decoration: none !important;
-  color: #e1a8e0;
+  color: #8a2be2;
   transition: all 0.4s ease;
 }
 a:hover {
-  color: #ffffff !important;
+  color: #000000;
 }
 
 p {
-  font-size: 12px;
-  line-height: 18px;
-  font-weight: 300;
-  line-height: 1.5;
-  color: #ffffff;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: normal;
+  color: #000000;
 }
 
 h1,
@@ -48,10 +58,10 @@ h5,
 h6 {
   font-weight: bold;
   letter-spacing: -1px;
+  color: #000000 !important;
 }
 
 h1 {
-  color: #ffffff;
   font-size: 60px;
   line-height: 66px;
   margin: 24px 0;
@@ -89,7 +99,7 @@ nav ul {
 }
 nav ul li {
   list-style: none;
-  color: #610656;
+  color: #ffc5f8;
 }
 nav .right {
   display: flex;
@@ -123,7 +133,7 @@ nav .bar {
   color: blueviolet;
 }
 .leftSection #element {
-  color: #ffffff;
+  color: #000000;
 }
 .leftSection .button-group {
   padding: 40px 0;
@@ -134,15 +144,35 @@ nav .bar {
   color: black;
   border-radius: 6px;
   border: 2px solid #ffffff;
-  font-size: 12px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: bold;
 }
 .leftSection .btn:hover {
-  background-color: #610656;
+  background-color: #ffc5f8;
   color: #ffffff;
 }
 
 .rightSection img {
   width: 400px;
+}
+
+.projects .carousel-indicators {
+  bottom: -53px;
+}
+.projects .carousel-item {
+  padding: 0 80px;
+}
+.projects .carousel-item .project-img {
+  padding: 40px 60px;
+}
+.projects .carousel-item .project-img img {
+  width: 600px;
+}
+.projects .carousel-item.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .education {
@@ -189,7 +219,7 @@ nav .bar {
   margin-left: 6em;
 }
 .timeline-info small {
-  color: #cbcbcb;
+  color: #8a2be2;
   font-size: 16px;
   font-weight: bold;
   display: inline-block;

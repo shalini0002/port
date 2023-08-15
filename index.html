@@ -9,8 +9,17 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="css/bootstrap.css" />
     <!-- Main Style Sheet -->
     <link rel="stylesheet" href="css/compile.css" />
@@ -48,62 +57,120 @@
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
-        </div>
+          </div>
         </div>
       </nav>
     </header>
 
     <main>
       <section class="firstSection container">
-        
         <div class="leftSection">
           <h1>
-            Hey Folks, I'm <span class="purple">Shalini Sharma</span>
+            Hey Folks, I'm <span class="purple">Shalini Sharma<br /></span>
             <span id="element"></span>
-            <div class="button-group">
-              <button class="btn">Download Resume</button>
-              <button class="btn">Github</button>
-            </div>
           </h1>
+          <div class="button-group">
+            <button class="btn">Download Resume</button>
+            <button class="btn">Github</button>
+          </div>
         </div>
 
         <div class="rightSection">
           <img src="./images/developer.png" />
         </div>
       </section>
-<section class="projects">
-  <div class="container">
-      <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <section class="projects">
+        <div class="container">
+          <h2 class="text-center">Projects</h2>
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="project-img">
+                  <img src="/images/developer.png" class="d-block" alt="" />
+                </div>
+                <p class="p-5">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Quasi molestiae harum dignissimos repellendus magnam illo,
+                  fuga atque. Aliquid distincti
+                </p>
+              </div>
+              <div class="carousel-item">
+                <div class="project-img">
+                  <img
+                    src="/images/webDevelopment.svg"
+                    class="d-block"
+                    alt=""
+                  />
+                </div>
+                <p class="p-5">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Quasi molestiae harum dignissimos repellendus magnam illo,
+                  fuga atque. Aliquid distincti
+                </p>
+              </div>
+              <div class="carousel-item">
+                <div class="project-img">
+                  <img src="/images/invoice_pdf.png" class="d-block" alt="" />
+                </div>
+                <p class="p-5">
+                  Used HTML, CSS and java script technologies to convert invoice
+                  data into a standardized and printable PDF document, which can
+                  then be shared electronically or printed for distribution to
+                  clients or customers.
+                </p>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="/images/developer.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="/images/developer.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="/images/developer.png" class="d-block w-100" alt="...">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi molestiae harum dignissimos repellendus magnam illo, fuga atque. Aliquid distincti</p>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
-    </section>
+      </section>
       <section
-        class="education d-lg-flex justify-content-center align-items-center"
+        class="education mt-5 d-lg-flex justify-content-center align-items-center"
       >
         <div class="container">
           <div class="row">
@@ -235,38 +302,34 @@
 
       <section class="secondSection">
         <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <span class="text-grey">What I have done so far</span>
-            <h3>Work Experience</h3>
-            <div class="box">
-              <div class="vertical">
-                <img class="image-top" src="/images/developer.png" alt="" />
-                <div class="vertical-title">
-                  HTML Developer Intern(aug 2022- dec 2022)
+          <div class="row">
+            <div class="col-md-12">
+              <span class="text-grey">What I have done so far</span>
+              <h3>Work Experience</h3>
+              <div class="box">
+                <div class="vertical">
+                  <img class="image-top" src="/images/developer.png" alt="" />
+                  <div class="vertical-title">
+                    HTML Developer Intern(aug 2022- dec 2022)
+                  </div>
+                  <div class="vertical-desc"></div>
                 </div>
-                <div class="vertical-desc">
-                  
-                </div>
-              </div>
-              <div class="vertical">
-                <img class="image-top" src="/images/developer.png" alt="" />
-                <div class="vertical-title">
-                  HTML Developer(Aug 2022- july 2023)
-                </div>
-                <div class="vertical-desc">
-                  
+                <div class="vertical">
+                  <img class="image-top" src="/images/developer.png" alt="" />
+                  <div class="vertical-title">
+                    HTML Developer(Aug 2022- july 2023)
+                  </div>
+                  <div class="vertical-desc"></div>
                 </div>
               </div>
             </div>
-          </div>         
+          </div>
         </div>
-      </div>
       </section>
     </main>
     <footer>
       <div class="footer container mt-5">
-        <h3 class="text-center">Get In Touch</h3>
+        <h2 class="text-center">Get In Touch</h2>
         <h4>Let's Connect</h4>
 
         <div class="footer-social mt-5">
@@ -292,12 +355,12 @@
               >
             </li>
             <li>
-              <a href="/"
+              <a target="_blank" href="https://github.com/shalini0002"
                 ><i class="fa fa-github me-2" aria-hidden="true"></i> Github</a
               >
             </li>
             <li>
-              <a href="/"
+              <a target="_blank" href="https://twitter.com/Shalini0024"
                 ><i class="fa fa-twitter me-2" aria-hidden="true"></i>Twitter</a
               >
             </li>
@@ -327,6 +390,5 @@
     <script src="/index.js"></script>
     <script src="/js/jquery.min.js"></script>
     <script src="/js/popper.min.js"></script>
-   
   </body>
 </html>

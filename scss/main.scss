@@ -1,6 +1,6 @@
 // variables
 
-$primary-theme: #ffc5f8;
+$primary-theme: #ffd4f9;
 $secondary-theme: #8a2be2;
 
 $primary-dark-theme: #000000;
@@ -137,7 +137,6 @@ nav {
 
   ul li {
     list-style: none;
-
     color: $primary-theme;
   }
   .right {
@@ -215,7 +214,7 @@ nav {
   .carousel-item {
     padding: 0 80px;
     .project-img {
-      padding: 40px 60px;
+      
       img {
         width: 600px;
       }
@@ -285,7 +284,7 @@ nav {
 .secondSection {
   height: 400px;
   .text-grey {
-    color: $color-grey;
+    color: $dark-mode-color;
   }
   .box {
     background-color: $color-white;
@@ -326,6 +325,10 @@ nav {
 //footer
 footer {
   height: 200px;
+  p{
+    font-size: $small-font-size;
+    line-height: $small-line-height;
+  }
 }
 .footer {
   padding: 23px 122px;
@@ -470,6 +473,15 @@ footer {
   .timeline-wrapper:before {
     left: 22px;
     top: 1px;
+  }
+  .projects{
+    .carousel-item .project-img img {
+      width: 300px;
+  }
+  p{
+    font-size: 16px;
+    line-height: 22px;
+  }
   }
   .footer {
     padding: 30px;

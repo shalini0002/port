@@ -44,7 +44,12 @@ body {
   color: $secondary-theme;
   &.dark-theme {
     background-color: $primary-dark-theme;
-    h1,h2,h3,h4,h5,h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       color: $color-white !important;
     }
     #element {
@@ -54,7 +59,21 @@ body {
       color: $color-white;
     }
     a:hover {
-      color: $color-white ;
+      color: $color-white;
+    }
+    @media screen and (max-width: 992px){
+      nav .nav-menu {
+        background-color: $secondary-dark-theme;
+      }
+    }
+    
+
+    
+    .nav-link a{
+      // color: $dark-mode-color;
+      &:hover{
+        color: $secondary-theme;
+      }
     }
   }
 }
@@ -69,12 +88,12 @@ ul {
 
 a {
   font-size: $link-font-size;
-  font-weight: $font-weight-normal;
+  font-weight: $font-weight-bold;
   text-decoration: none !important;
   color: $secondary-theme;
   @include transition-effect;
   &:hover {
-    color: $color-black ;
+    color: $color-white;
   }
 }
 
@@ -144,6 +163,15 @@ nav {
     align-items: center;
     gap: 3rem;
   }
+  .right button {
+    border: none;
+    background: none;
+    color: $secondary-theme;
+    &:hover {
+      color: $color-white;
+    }
+  }
+
   .navbar-brand {
     .fa-user {
       font-size: 26px;
@@ -184,7 +212,7 @@ nav {
   .button-group {
     padding: 40px 0;
   }
-  .btn {
+  a {
     padding: 12px;
     background: $color-white;
     color: black;
@@ -195,7 +223,8 @@ nav {
     font-weight: $font-weight-bold;
     &:hover {
       background-color: $primary-theme;
-      color: $color-white;
+      color: $secondary-theme;
+      transition: 0.3s ease-out;
     }
   }
 }
@@ -214,16 +243,21 @@ nav {
   .carousel-item {
     padding: 0 80px;
     .project-img {
-      
       img {
         width: 600px;
       }
     }
     &.active {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
     }
+  }
+  .decription{
+   
+    display: flex;
+    flex-direction: column;
   }
 }
 //EDUCATION
@@ -325,7 +359,7 @@ nav {
 //footer
 footer {
   height: 200px;
-  p{
+  p {
     font-size: $small-font-size;
     line-height: $small-line-height;
   }
@@ -335,7 +369,7 @@ footer {
   .footer-social ul {
     justify-content: center;
     display: flex;
-    gap: 6rem;
+    gap: 3rem;
   }
 }
 //small responsive
@@ -378,7 +412,7 @@ footer {
       top: 70px;
       gap: 0;
       flex-direction: column;
-      background-color: $color-black;
+      background-color: $secondary-dark-theme;
       width: 100%;
       text-align: center;
       transition: 0.3s ease-in;
@@ -474,20 +508,21 @@ footer {
     left: 22px;
     top: 1px;
   }
-  .projects{
+  .projects {
     .carousel-item .project-img img {
       width: 300px;
-  }
-  p{
-    font-size: 16px;
-    line-height: 22px;
-  }
+    }
+    p {
+      font-size: 16px;
+      line-height: 22px;
+    }
   }
   .footer {
     padding: 30px;
     .footer-social ul {
       justify-content: center;
       display: flex;
+      flex-wrap: wrap;
       gap: 1rem;
       flex-direction: column;
     }
@@ -509,4 +544,11 @@ footer {
       }
     }
   }
+  // body{
+  //   &.dark-theme {
+  //     nav .nav-menu {
+  //       background: none;
+  //     }
+  //   }
+  // }
 }

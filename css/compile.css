@@ -11,7 +11,12 @@ body {
 body.dark-theme {
   background-color: #000000;
 }
-body.dark-theme h1, body.dark-theme h2, body.dark-theme h3, body.dark-theme h4, body.dark-theme h5, body.dark-theme h6 {
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme h4,
+body.dark-theme h5,
+body.dark-theme h6 {
   color: #ffffff !important;
 }
 body.dark-theme #element {
@@ -22,6 +27,14 @@ body.dark-theme p {
 }
 body.dark-theme a:hover {
   color: #ffffff;
+}
+@media screen and (max-width: 992px) {
+  body.dark-theme nav .nav-menu {
+    background-color: #e7dbdb;
+  }
+}
+body.dark-theme .nav-link a:hover {
+  color: #8a2be2;
 }
 
 ul {
@@ -34,13 +47,13 @@ ul li {
 
 a {
   font-size: 16px;
-  font-weight: normal;
+  font-weight: bold;
   text-decoration: none !important;
   color: #8a2be2;
   transition: all 0.4s ease;
 }
 a:hover {
-  color: #000000;
+  color: #ffffff;
 }
 
 p {
@@ -106,6 +119,14 @@ nav .right {
   align-items: center;
   gap: 3rem;
 }
+nav .right button {
+  border: none;
+  background: none;
+  color: #8a2be2;
+}
+nav .right button:hover {
+  color: #ffffff;
+}
 nav .navbar-brand .fa-user {
   font-size: 26px;
 }
@@ -138,7 +159,7 @@ nav .bar {
 .leftSection .button-group {
   padding: 40px 0;
 }
-.leftSection .btn {
+.leftSection a {
   padding: 12px;
   background: #ffffff;
   color: black;
@@ -148,9 +169,10 @@ nav .bar {
   line-height: 20px;
   font-weight: bold;
 }
-.leftSection .btn:hover {
+.leftSection a:hover {
   background-color: #ffd4f9;
-  color: #ffffff;
+  color: #8a2be2;
+  transition: 0.3s ease-out;
 }
 
 .rightSection img {
@@ -168,6 +190,7 @@ nav .bar {
 }
 .projects .carousel-item.active {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -277,7 +300,7 @@ footer p {
 .footer .footer-social ul {
   justify-content: center;
   display: flex;
-  gap: 6rem;
+  gap: 3rem;
 }
 
 @media screen and (max-width: 576px) {
@@ -316,7 +339,7 @@ footer p {
     top: 70px;
     gap: 0;
     flex-direction: column;
-    background-color: #000000;
+    background-color: #e7dbdb;
     width: 100%;
     text-align: center;
     transition: 0.3s ease-in;
@@ -417,6 +440,7 @@ footer p {
   .footer .footer-social ul {
     justify-content: center;
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
     flex-direction: column;
   }
